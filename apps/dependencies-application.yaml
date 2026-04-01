@@ -2,15 +2,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eso-helm-chart
+  name: dependencies-helm-chart
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/cloudhein/throttler-helm-chart.git
-    targetRevision: head
+    repoURL: https://github.com/cloudhein/dependencies-services-helm-chart.git
+    targetRevision: HEAD
     path: .
     helm:
       valueFiles:

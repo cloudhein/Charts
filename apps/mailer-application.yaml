@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eso-helm-chart
+  name: mailer-helm-chart
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/cloudhein/mailer-helm-chart.git
-    targetRevision: head
+    targetRevision: HEAD
     path: .
     helm:
       valueFiles:
