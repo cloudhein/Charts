@@ -1,0 +1,10 @@
+# Ignore documentation changes
+README.md
+*.md
+
+# Ignore architecture diagram images
+images/
+*.png
+*.jpg
+*.svg
+*.drawio
